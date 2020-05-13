@@ -1,0 +1,24 @@
+{% extends 'base/base.html' %}
+
+{% block contenido %}
+<form method="post">
+    <div class="panel-default">
+        <div class="panel-heading">
+            
+        </div>
+        <div class="panel-body">
+            {% csrf_token %}
+            <div class="alert alert-succes">
+                <h1>
+                    ¿Seguro que quiere eliminar a {{obj.nombre}} - {{obj.id}}? 
+                </h1>
+               
+            </div>
+            <button type="submit" class="btn btn-danger">
+                <span class="fa fa-delete">Eliminar</span>
+            </button>
+            <a href="{% url 'aliado:listar_aliados' %}" class="btn btn-primary"><span class="fa fa-undo">Regresar</span></a>
+        </div>
+    </div>
+</form>
+{% endblock contenido %}

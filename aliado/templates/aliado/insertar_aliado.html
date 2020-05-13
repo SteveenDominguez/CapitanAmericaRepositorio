@@ -1,0 +1,19 @@
+{% extends 'base/base.html' %}
+
+{% block contenido %}
+<form method="post">
+    <div class="panel-body">
+
+
+        {%csrf_token %}
+        {{form.as_p}}
+        <button type="submit" class="btn btn-danger">
+            <span class="fa fa-save">
+                Guardar
+            </span>
+        </button>
+        <a href="{% url 'aliado:listar_aliados' %}" class="btn btn-primary"><span class="fa fa-undo">Regresar</span></a>
+    </div>
+</form>
+
+{% endblock contenido %}
