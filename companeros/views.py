@@ -11,19 +11,19 @@ class ListarCompaneros(generic.ListView):
     context_object_name="obj"
 class InsertarCompaneros(generic.CreateView):
     model=Companeros
-    template_name="companeros/insertar_companeros.html"
+    template_name="companeros/insertar_companero.html"
     context_object_name="obj"
     form_class= CompanerosForm
     success_url= reverse_lazy('companeros:listar_companeros')
 class EditarCompaneros(generic.UpdateView):
     model=Companeros
-    template_name="companeros/insertar_companeros.html"
+    template_name="companeros/insertar_companero.html"
     context_object_name="obj"
     form_class= CompanerosForm
     success_url= reverse_lazy('companeros:listar_companeros')
 class EliminarCompaneros(generic.DeleteView):
     model=Companeros
-    template_name="companeros/eliminar_companeros.html"
+    template_name="companeros/eliminar_companero.html"
     context_object_name="obj"
     form_class= CompanerosForm
     success_url= reverse_lazy('companeros:listar_companeros')

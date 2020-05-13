@@ -1,13 +1,14 @@
 from django import forms
 from companeros.models import Companeros
+
 class CompanerosForm(forms.ModelForm):
     class Meta:
         model=Companeros
 
         fields=['id','nombre','dinero']
-        labels={'Id': 'Id del patrocinador'}
+        labels={'Id': 'Id del compañero'}
         widget={'Id':forms.TextInput()}
-        labels={'Nombre':'Nombre del patrocinador'}
+        labels={'Nombre':'Nombre del compañero'}
         widget={'Nombre':forms.TextInput()}
         
         
