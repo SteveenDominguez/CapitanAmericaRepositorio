@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'aliado',
     'patrocinador',
     'mision',
+    'compa',
 ]
 
 MIDDLEWARE = [

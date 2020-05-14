@@ -23,4 +23,5 @@ urlpatterns = [
     path('patrocinador/',include(('patrocinador.urls','patrocinador'),namespace='patrocinador')),
     path('mision/',include(('mision.urls','mision'),namespace='mision')),
 
+    path('compa/',include(('compa.urls','compa'),namespace='compa')),
 ]
