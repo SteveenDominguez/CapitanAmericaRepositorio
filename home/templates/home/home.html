@@ -2,10 +2,9 @@
 {% block head_title %}
 Pagina Principal
 {%endblock head_title %}
+{% load static %}
 {% block contenido %}
-<h1>
-    Capitan America
-</h1>
 
-<img class="img-responsive" src="static 'img/capitan.jpg' " alt="">
+<img class="img-profile rounded-circle" style="display: block; margin: auto;" src="{% static 'base/img/capitan.jpg' %} ">
+
 {%endblock contenido%}
