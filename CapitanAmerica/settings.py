@@ -42,6 +42,8 @@ INSTALLED_APPS = [
     'patrocinador',
     'mision',
     'compa',
+    'enemigo',
+    'personaSalvada',
 ]
 
 MIDDLEWARE = [
