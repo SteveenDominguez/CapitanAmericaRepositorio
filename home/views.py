@@ -7,3 +7,4 @@ class Home1(generic.View):
         return HttpResponse('Bienvenido ma nino')
 class Home(generic.TemplateView):
     template_name="home/home.html"
+    
