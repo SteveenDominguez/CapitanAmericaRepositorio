@@ -40,7 +40,7 @@ INSTALLED_APPS = [
     'home',
     'aliado',
     'patrocinador',
-    'companeros',
+    'compa',
 ]
 
 MIDDLEWARE = [
